@@ -1,11 +1,14 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: about me
 pubDate: 2024-03-01
 description: an introduction
 author: GabrielIchiro
 image:
   url: "https://media.licdn.com/dms/image/D4E03AQFCyDy1zXPQuA/profile-displayphoto-shrink_800_800/0/1685639603404?e=1715817600&v=beta&t=4DHIjjGmpU7BKe4pnnpaiUGf9QMZ2yvCQUSgr79zjCI"
-  alt: "My picture."
+  alt: "aboutme."
+
+tags: ["tech", "blogging", "personal life"]
 ---
 
 # About Me

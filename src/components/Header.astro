@@ -1,17 +1,13 @@
+---
+import Hamburger from "./Hamburger.astro";
+import Navigation from "./Navigation.astro";
+import ThemeIcon from "./ThemeIcon.astro";
+---
+
 <header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
-
-
-    <nav
-    class="flex flex-col items-center justify-between w-full text-center md:flex-row"
-    >
-    <a class="text-white" href="/">Home</a>
-
-    <a  class="text-white" href="/work">Work</a>
-
-    <a class="text-white"  href="/blog">Blog</a>
-
-    <a class="text-white"  href="/projects">Projects</a>
-
-
-</nav>
+    <nav>
+        <Hamburger />
+        <ThemeIcon />
+        <Navigation />
+      </nav>
 </header>

@@ -1,15 +1,13 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import BlogPost from "../components/BlogPost.astro";
-
-const pageTitle = "Blog";
-const allPosts = await getCollection("blog");
+const pageTitle = "Tech and projects Blog";
+const allPosts = await Astro.glob("../pages/blogPosts/*.md");
 ---
 
 <Layout title={pageTitle}>
-    <h2 class="text-white font-semibold">This is where I will post about my journey</h2>
-    <ul class="mt-4">
-      {allPosts.map((post) => <BlogPost url={"/blog/" + post.slug} title={post.data.title} description={post.data.description} />)}
-    </ul>
-  </Layout>
+  <h2 class="text-white font-semibold">This is where I will post about my journey</h2>
+  <ul class="mt-4">
+    {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} description={post.frontmatter.description}/>)}
+  </ul>
+</Layout>

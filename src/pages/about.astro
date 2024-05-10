@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const pageTitle = "About Me";
+
+
+const identity = {
+  firstName: "Gabriel",
+  country: "Bolivia",
+  occupation: "Software Engineer",
+  hobbies: ["Music", "Research", "Training"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro"];
+
+const skillColor = "grey";
+const fontWeight = "bold";
+const textCase = "uppercase";
+---
+
+<style define:vars={{ skillColor, fontWeight, textCase }}>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+  }
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+  }
+</style>
+
+<Layout title={pageTitle}>
+
+
+  <p>Hello there! 👋</p>
+  <ul>
+    <li>I'm  {identity.firstName}.</li>
+    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+    {
+      identity.hobbies.length >= 2 && (
+        <li>
+          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
+        </li>
+      )
+    }
+  </ul>
+  <p>My journey in Software Engineering has been both exciting and rewarding. From Cybersecurity and Competitive Programming challenges, I've learned invaluable lessons and gained insights that continue to shape my professional growth.</p>
+  <p>Some of My skills are:</p><p></p><ul>
+    {skills.map((skill) => <li class="skill">{skill}</li>)}
+  </ul>
+  <h2>Blog</h2>
+  <p>Additionally, this website serves as my personal blog, where I share my thoughts, experiences, and insights on Technology, Mindfulness, Moivation and AI. I believe in the power of knowledge sharing and community building, and I'm excited to engage with readers like you through meaningful discussions and exchanges.</p>
+  <p>I'm always open to new opportunities, collaborations, or simply connecting with fellow enthusiasts. Feel free to reach out to me :) </p>
+ 
+</Layout>
