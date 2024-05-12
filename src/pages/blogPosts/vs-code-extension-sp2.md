@@ -1,11 +1,11 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: SafeDev Vulnerabilities Analyzer - Development Iteration 2
-pubDate: 2024-05-12
+pubDate: 2024-05-02
 description: Updates on the second iteration of development for the SafeDev Vulnerabilities Analyzer extension for Visual Studio Code.
 author: GabrielIchiro
 image:
-  url: "https://res.cloudinary.com/practicaldev/image/fetch/s--fGfO3_Mu--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/21xapfe2i1ixwm7ke8ai.png"
+  url: "https://firebasestorage.googleapis.com/v0/b/vs-code-xss-analyzer.appspot.com/o/documentation%2Fimages%2F2.jpeg?alt=media&token=a4165df1-b86f-4a7d-9e57-810752f7828b"
   alt: "Visual Studio Code with SafeDev Vulnerabilities Analyzer extension"
 tags: ["tech", "blogging", "projects", "cybersecurity", "vscode"]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: SafeDev Vulnerabilities Analyzer  1st sprint Update
-pubDate: 2024-03-01
+pubDate: 2024-04-01
 description: Update on progress after first iteration of research and development of VSCODE XSS analyzer project
 author: GabrielIchiro
 image:
