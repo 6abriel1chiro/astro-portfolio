@@ -5,7 +5,7 @@ pubDate: 2024-03-01
 description: an introduction
 author: GabrielIchiro
 image:
-  url: "https://media.licdn.com/dms/image/D4E03AQFCyDy1zXPQuA/profile-displayphoto-shrink_800_800/0/1685639603404?e=1715817600&v=beta&t=4DHIjjGmpU7BKe4pnnpaiUGf9QMZ2yvCQUSgr79zjCI"
+  url: "https://scontent.fcbb1-1.fna.fbcdn.net/v/t39.30808-6/426621625_3704554559791592_4254498922410147930_n.jpg?stp=cp6_dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=zVMEIzqJhW4Q7kNvgFBqm2x&_nc_ht=scontent.fcbb1-1.fna&oh=00_AYASQkwis3JuiDbLo6AYoXLQjLm6aYP8dtjTF2zIynq98w&oe=6650C635"
   alt: "aboutme."
 
 tags: ["tech", "blogging", "personal life"]
