@@ -8,15 +8,20 @@ export async function getStaticPaths() {
     allPosts = await Astro.glob("../blogPosts/*.md");
   } catch (error) {
     console.error('Error fetching posts:', error);
-    return;
+    return [];
   }
 
   if (!allPosts || !Array.isArray(allPosts)) {
     console.error('allPosts is undefined or not an array');
-    return;
+    return [];
   }
-const uniqueTags = [
-  ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
+  const uniqueTags = [
+  ...new Set(
+    allPosts
+      .filter((post) => post.frontmatter) 
+      .map((post) => post.frontmatter.tags)
+      .flat()
+  ),
 ];
 
   return uniqueTags.map((tag) => {
