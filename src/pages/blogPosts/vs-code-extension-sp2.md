@@ -26,9 +26,12 @@ To provide a more integrated experience, we've implemented a `CodeActionProvider
 
 This feature was implemented in a new `XSSFixProvider` class, which is registered as a code actions provider for JavaScript files. The `XSSFixProvider` class is defined in a separate `xssFixProvider.js` file, keeping our architecture clean and the responsibilities of each module clear.
 
+When no vulnerability eis found a message is displayed:
+<img class="no-issue-found" src="https://firebasestorage.googleapis.com/v0/b/vs-code-xss-analyzer.appspot.com/o/documentation%2Fimages%2Fno-found.jpeg?alt=media&token=7d285d1e-1a56-41c4-89b4-39e50abd8b6d" alt="screencapture" />
+
 ### Integration with the Extension Activation Process
 
-The activation of the SSRF and XSS analyzers has been integrated into the main extension activation process. When the SafeDev Vulnerabilities Analyzer extension is activated, it will automatically activate the SSRF and XSS analyzers.
+The activation of the XSS analyzers has been integrated into the main extension activation process. When the SafeDev Vulnerabilities Analyzer extension is activated, it will automatically activate the SSRF and XSS analyzers.
 
 This was achieved by requiring the `ssrfAnalyzer` and `xssAnalyzer` modules in the main `extension.js` file and calling their `activateSSRFAnalyzer` and `activateXSSAnalyzer` functions in the `activate` function.
 

@@ -16,6 +16,7 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro"];
 const skillColor = "grey";
 const fontWeight = "bold";
 const textCase = "uppercase";
+const imageUrl = "url_to_your_image";
 ---
 
 <style define:vars={{ skillColor, fontWeight, textCase }}>
@@ -28,9 +29,15 @@ const textCase = "uppercase";
     font-weight: var(--fontWeight);
     text-transform: var(--textCase);
   }
+  .profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
 </style>
 
 <Layout title={pageTitle}>
+  <img class="profile-image" src={imageUrl} alt="Profile picture" />
 
 
   <p>Hello there! 👋</p>
