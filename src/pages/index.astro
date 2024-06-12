@@ -1,41 +1,56 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "@/layouts/Layout.astro"
 
+import AboutMe from "@/components/AboutMe.astro"
+import Briefcase from "@/components/icons/Briefcase.astro"
+import CodeIcon from "@/components/icons/Code.astro"
+import Experience from "@/components/Experience.astro"
+import ProfileCheck from "@/components/icons/ProfileCheck.astro"
+import Projects from "@/components/Projects.astro"
+import SectionContainer from "@/components/SectionContainer.astro"
+import Hero from "@/components/Hero.astro"
 ---
 
-<Layout title="Gabriel Ichiro">
+<Layout
+  title="Porfolio de Gabriel Ichiro - Desarrollador y Programador Web"
+  description="Contratanos para crear tu aplicación web o móvil."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero>
+      </slot>
+    </Hero>
+    </SectionContainer>
+    <div class="space-y-24">
+    <SectionContainer id="experiencia">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <Briefcase class="size-8" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
 
-<div class="mx-auto text-center mb-8 lg:mb-16  justify-center w-3/4">
-	<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
-		Hey, my name is Gabriel and I am a Software Engineer 💻
-	</h2>
-	<p class="font-light text-gray-600 sm:text-xl dark:text-gray-400">
-		I am currently working as a freelance frontend developer and spetializing in cybersecurity
-		
-	</p>
+    <SectionContainer id="proyectos">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
 
-</div>
-	
+    <SectionContainer id="sobre-mi">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+      >
+        <ProfileCheck class="size-8" />
+        Sobre mí
+      </h2>
+      <AboutMe />
+    </SectionContainer>
+  </div>
+  </main>
 </Layout>
-
-<style>
-	a {
-	  color: #00539f;
-	}
-  
-	.tags {
-	  display: flex;
-	  flex-wrap: wrap;
-	  margin: 0 auto;
-	}
-  
-	.tag {
-	  margin: 0.25em;
-	  border: dotted 1px #a1a1a1;
-	  border-radius: 0.5em;
-	  padding: 0.5em 1em;
-	  font-size: 1.15em;
-	  background-color: #f8fcfd;
-	}
-  </style>
-  

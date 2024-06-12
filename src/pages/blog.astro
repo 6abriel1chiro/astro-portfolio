@@ -5,9 +5,11 @@ const pageTitle = "Tech and projects Blog";
 const allPosts = await Astro.glob("../pages/blogPosts/*.md");
 ---
 
-<Layout title={pageTitle}>
-  <h2 class="text-white font-semibold">This is where I will post about my journey</h2>
-  <ul class="mt-4">
-    {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} description={post.frontmatter.description}/>)}
-  </ul>
+<Layout title={pageTitle} description="">
+  <div class="py-16 md:py-36 mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl" >
+    <h2 class="text-white font-semibold">This is where I will post about projects and ideas I come up with</h2>
+    <ul class="mt-4">
+      {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} description={post.frontmatter.description}/>)}
+    </ul>
+  </div>
 </Layout>
