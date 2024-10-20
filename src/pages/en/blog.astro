@@ -1,14 +1,17 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import BlogPost from "../components/BlogPost.astro";
-const pageTitle = "Bog de Gabriel Ichiro";
-const allPosts = await Astro.glob("../../pages/blogPosts/*.md");
+import Layout from "../../layouts/Layout.astro";
+import BlogPost from "../../components/BlogPost.astro";
+const pageTitle = "Tech and projects Blog";
+const allPosts = await Astro.glob("../pages/blogPosts/*.md");
+import { getTranslations, type Translations } from "@/i18n";
+const { currentLocale = "es" } = Astro;
+const translations: Translations = getTranslations({ currentLocale });
 ---
 
 <Layout title={pageTitle} description="Gabriel Ichiro Blog">
   <div class="py-16 md:py-36 mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
     <h2 class="text-white font-semibold">
-      Aqui publico actualizaciones o articulos que se me ocurran
+      This is where I will post about projects and ideas I come up with
     </h2>
     <ul class="mt-4">
       {

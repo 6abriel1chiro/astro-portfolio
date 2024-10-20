@@ -9,11 +9,14 @@ import ProfileCheck from "@/components/icons/ProfileCheck.astro";
 import Projects from "@/components/Projects.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Hero from "@/components/Hero.astro";
+import { getTranslations, type Translations } from "@/i18n";
+const { currentLocale = "es" } = Astro;
+const translations: Translations = getTranslations({ currentLocale });
 ---
 
 <Layout
-  title="Gabriel Ichiro - Ingeniero de Sistemas y Desarrollador Web"
-  description="Contactanos para crear tu sistema web y móvil."
+  title={translations.SEO_TITLE}
+  description={translations.SEO_DESCRIPTION}
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
@@ -26,7 +29,7 @@ import Hero from "@/components/Hero.astro";
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
       >
         <Briefcase class="size-8" />
-        Experiencia laboral
+        Work experience
       </h2>
       <Experience />
     </SectionContainer>

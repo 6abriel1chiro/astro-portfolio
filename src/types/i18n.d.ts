@@ -1,7 +1,7 @@
 // src/i18n.d.ts
 export type Translations = {
-  "SEO-TITLE": string;
-  "SEO-DESCRIPTION": string;
+  SEO_TITLE: string;
+  SEO_DESCRIPTION: string;
   "NAV-ITEMS":
     | {
         EXPERIENCE: string;
