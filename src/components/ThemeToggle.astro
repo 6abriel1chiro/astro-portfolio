@@ -29,10 +29,7 @@ const THEMES = ["Light", "Dark", "System"];
     <ul>
       {
         THEMES.map((theme) => (
-          <li
-            class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm"
-            data-theme={theme.toLowerCase()}
-          >
+          <li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm">
             {theme}
           </li>
         ))
@@ -52,6 +49,7 @@ const THEMES = ["Light", "Dark", "System"];
       transform: scale(0.8);
       opacity: 0;
     }
+
     to {
       transform: scale(1);
       opacity: 1;
@@ -68,6 +66,7 @@ const THEMES = ["Light", "Dark", "System"];
     if (typeof localStorage !== "undefined") {
       return localStorage.getItem("theme") ?? "system";
     }
+
     return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
@@ -109,8 +108,7 @@ const THEMES = ["Light", "Dark", "System"];
 
   document.querySelectorAll(".themes-menu-option").forEach((element) => {
     element.addEventListener("click", (e) => {
-      const theme = e.target.getAttribute("data-theme");
-      localStorage.setItem("theme", theme);
+      localStorage.setItem("theme", e.target.innerText.toLowerCase().trim());
       updateTheme();
     });
   });
