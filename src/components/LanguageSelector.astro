@@ -1,0 +1,33 @@
+---
+const { currentLanguage } = Astro.props;
+---
+
+<div class="language-selector">
+  <select id="language-select" value={currentLanguage}>
+    <option value="en">English</option>
+    <option value="es">Español</option>
+  </select>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('language-select');
+    if (select) {
+      select.addEventListener('change', (event) => {
+        const target = event.target as HTMLSelectElement;
+        if (target) {
+          const newLanguage = target.value;
+          window.location.href = `/${newLanguage}`;
+        }
+      });
+    }
+  });
+</script>
+
+<style>
+  .language-selector {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+</style>
