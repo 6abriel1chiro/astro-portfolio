@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import BlogPost from "../../components/BlogPost.astro";
 const pageTitle = "Tech and projects Blog";
-const allPosts = await Astro.glob("../pages/blogPosts/*.md");
+const allPosts = await Astro.glob("../../pages/blogPosts/*.md");
 import { getTranslations, type Translations } from "@/i18n";
 const { currentLocale = "es" } = Astro;
 const translations: Translations = getTranslations({ currentLocale });

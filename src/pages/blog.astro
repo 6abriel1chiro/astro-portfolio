@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import BlogPost from "../components/BlogPost.astro";
 const pageTitle = "Bog de Gabriel Ichiro";
-const allPosts = await Astro.glob("../../pages/blogPosts/*.md");
+const allPosts = await Astro.glob("../pages/blogPosts/*.md");
 ---
 
 <Layout title={pageTitle} description="Gabriel Ichiro Blog">

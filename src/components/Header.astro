@@ -33,7 +33,7 @@ const navItems = [
   {
     title: translations["NAV-ITEMS"]["BLOG"],
     label: "Blog",
-    url: `/${currentLocale}/blog/`,
+    url: currentLocale === "es" ? "/blog/" : `/${currentLocale}/blog/`,
   },
 ];
 ---
