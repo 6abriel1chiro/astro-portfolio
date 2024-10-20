@@ -4,16 +4,16 @@ const { currentLanguage } = Astro.props;
 
 <div class="language-selector">
   <select id="language-select" value={currentLanguage}>
-    <option value="en">English</option>
-    <option value="es">Español</option>
+    <option value="es" selected={currentLanguage === "es"}>Español</option>
+    <option value="en" selected={currentLanguage === "en"}>English</option>
   </select>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const select = document.getElementById('language-select');
+  document.addEventListener("DOMContentLoaded", () => {
+    const select = document.getElementById("language-select");
     if (select) {
-      select.addEventListener('change', (event) => {
+      select.addEventListener("change", (event) => {
         const target = event.target as HTMLSelectElement;
         if (target) {
           const newLanguage = target.value;
@@ -26,8 +26,34 @@ const { currentLanguage } = Astro.props;
 
 <style>
   .language-selector {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .language-selector:hover {
+    transform: scale(1.05);
+  }
+
+  #language-select {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+  }
+
+  #language-select:hover {
+    color: #0f8c15;
   }
 </style>
