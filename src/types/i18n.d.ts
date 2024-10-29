@@ -1,24 +1,24 @@
-// src/i18n.d.ts
+// src/types/i18n.d.ts
 export type Translations = {
   SEO_TITLE: string;
   SEO_DESCRIPTION: string;
   EXPERIENCE_TITLE: string;
   PROJECTS_TITLE: string;
   ABOUT_ME_TITLE: string;
-  "NAV-ITEMS":
+  NAV_ITEMS:
     | {
         EXPERIENCE: string;
         PROJECTS: string;
-        "ABOUT-ME": string;
+        ABOUT_ME: string;
         BLOG: string;
       }
     | {
         EXPERIENCIA: string;
         PROYECTOS: string;
-        "SOBRE-MI": string;
+        SOBRE_MI: string;
         BLOG: string;
       };
-  "BLOG-PAGE": {
+  BLOG_PAGE: {
     TITLE: string;
     DESCRIPTION: string;
   };

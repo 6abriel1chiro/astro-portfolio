@@ -1,17 +1,17 @@
 {
   "SEO_TITLE": "Gabriel Ichiro - Ingeniero de Sistemas y Desarrollador Web",
-  "SEO_DESCRIPTION": "Contactanos para crear tu sistema web/móvil.",
-  "EXPERIENCE_TITLE": "Experiencia Laboral",
+  "SEO_DESCRIPTION": "Contactanos para crear tu sistema web y móvil.",
+  "EXPERIENCE_TITLE": "Experiencia",
   "PROJECTS_TITLE": "Proyectos",
-  "ABOUT-ME_TITLE": "Sobre Mí",
-  "NAV-ITEMS": {
+  "ABOUT_ME_TITLE": "Sobre mí",
+  "NAV_ITEMS": {
     "EXPERIENCIA": "Experiencia",
     "PROYECTOS": "Proyectos",
-    "SOBRE-MI": "Sobre mí",
+    "SOBRE_MI": "Sobre mí",
     "BLOG": "Blog"
   },
-  "BLOG-PAGE": {
+  "BLOG_PAGE": {
     "TITLE": "Blog de Gabriel Ichiro",
-    "DESCRIPTION": "Aquí publico actualizaciones o blogs regularmente."
+    "DESCRIPTION": "Aquí publico actualizaciones o artículos que se me ocurran."
   }
 }
