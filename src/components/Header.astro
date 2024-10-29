@@ -9,30 +9,30 @@ const translations: Translations = getTranslations({ currentLocale });
 const navItems = [
   {
     title:
-      "EXPERIENCIA" in translations["NAV-ITEMS"]
-        ? translations["NAV-ITEMS"]["EXPERIENCIA"]
-        : translations["NAV-ITEMS"]["EXPERIENCE"],
+      "EXPERIENCIA" in translations.NAV_ITEMS
+        ? translations.NAV_ITEMS.EXPERIENCIA
+        : translations.NAV_ITEMS.EXPERIENCE,
     label: "experiencia",
     url: "/#experiencia",
   },
   {
     title:
-      "PROYECTOS" in translations["NAV-ITEMS"]
-        ? translations["NAV-ITEMS"]["PROYECTOS"]
-        : translations["NAV-ITEMS"]["PROJECTS"],
+      "PROYECTOS" in translations.NAV_ITEMS
+        ? translations.NAV_ITEMS.PROYECTOS
+        : translations.NAV_ITEMS.PROJECTS,
     label: "proyectos",
     url: "/#proyectos",
   },
   {
     title:
-      "SOBRE-MI" in translations["NAV-ITEMS"]
-        ? translations["NAV-ITEMS"]["SOBRE-MI"]
-        : translations["NAV-ITEMS"]["ABOUT-ME"],
+      "SOBRE_MI" in translations.NAV_ITEMS // Updated from "SOBRE-MI"
+        ? translations.NAV_ITEMS.SOBRE_MI
+        : translations.NAV_ITEMS.ABOUT_ME,
     label: "sobre-mi",
     url: "/#sobre-mi",
   },
   {
-    title: translations["NAV-ITEMS"]["BLOG"],
+    title: translations.NAV_ITEMS.BLOG,
     label: "Blog",
     url: currentLocale === "es" ? "/blog/" : `/${currentLocale}/blog/`,
   },
