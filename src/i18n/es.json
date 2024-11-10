@@ -4,6 +4,17 @@
   "EXPERIENCE_TITLE": "Experiencia",
   "PROJECTS_TITLE": "Proyectos",
   "ABOUT_ME_TITLE": "Sobre mí",
+  "ABOUT_ME": {
+    "INTRO": "Me llamo Gabriel Ichiro. Empecé a interesarme por la tecnología a temprana edad intentando hacer videojuegos con C++. Actualmente estoy trabajando como desarrollador full stack con interés en ciberseguridad.",
+    "ACHIEVEMENTS": "Algunos de mis éxitos incluyen ganar el 2do lugar en el Hackacom de Comteco y participar y quedar en el top 5 de la competencia de ciberseguridad de la AGETIC a nivel nacional."
+  },
+  "HERO": {
+    "GREETING": "¡Hey! 👋, me llamo Gabriel",
+    "DESCRIPTION": "+5 años de formación en tecnología. <strong>Ingeniero de Software, apasionado por la ciberseguridad e inteligencia artificial</strong> de Cochabamba, Bolivia. Especializado en el desarrollo de aplicaciones web y móviles.",
+    "AVAILABLE": "Disponible para trabajar",
+    "CONTACT_ME": "Contáctame",
+    "LINKEDIN": "LinkedIn"
+  },
   "NAV_ITEMS": {
     "EXPERIENCIA": "Experiencia",
     "PROYECTOS": "Proyectos",
