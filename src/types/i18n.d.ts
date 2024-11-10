@@ -3,6 +3,12 @@ export type Translations = {
   SEO_TITLE: string;
   SEO_DESCRIPTION: string;
   EXPERIENCE_TITLE: string;
+  EXPERIENCE: {
+    date: string;
+    title: string;
+    company: string;
+    location: string;
+  };
   PROJECTS_TITLE: string;
   ABOUT_ME_TITLE: string;
   ABOUT_ME: {

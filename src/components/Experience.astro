@@ -1,39 +1,20 @@
 ---
-import ExperienceItem from "./ExperienceItem.astro"
-const EXPERIENCIE = [
-{
-    date: "Marzo de 2024 - Presente (4 meses)",
-    title: "Mobile Developer",
-    company: "Andean",
-    description:
-      "Expo Application Development, Firebase Configuration, Apple Developer Program Configuration, Play Store Console Configuration",
-    location: "Cochabamba, Bolivia",
-  },
-  {
-    date: "Noviembre de 2023 - Febrero de 2024 (4 meses)",
-    title: "Mobile Developer",
-    company: "Andean",
-    description:
-      "Expo Application Development, Firebase Configuration,  NextJS Landing page development, and TailwindCSS",
-    location: "Cochabamba, Bolivia",
-  },
-  {
-    date: "Junio de 2023 - Septiembre de 2023 (4 meses)",
-    title: "Web Developer",
-    company: "Andean",
-    description: "Development of web applications with ReactJS, Firebase, Redux",
-    location: "Cochabamba, Bolivia",
-  },
-  // existing experiences...
-]
+import ExperienceItem from "./ExperienceItem.astro";
+import { getTranslations, type Translations } from "../i18n";
 
+const { currentLocale = "es" } = Astro;
+const translations: Translations = getTranslations({ currentLocale });
+
+const EXPERIENCES = Array.isArray(translations["EXPERIENCE"])
+  ? translations["EXPERIENCE"]
+  : [];
 ---
 
 <ol class="relative mt-16">
   {
-    EXPERIENCIE.map((experiencie) => (
+    EXPERIENCES.map((experience: any) => (
       <li class="">
-        <ExperienceItem {...experiencie} />
+        <ExperienceItem {...experience} />
       </li>
     ))
   }

@@ -1,9 +1,15 @@
 {
   "SEO_TITLE": "Gabriel Ichiro - Ingeniero de Sistemas y Desarrollador Web",
-  "SEO_DESCRIPTION": "Contactanos para crear tu sistema web y móvil.",
+  "SEO_DESCRIPTION": "Contáctanos para crear tu sistema web y móvil.",
+  "NAV_ITEMS": {
+    "EXPERIENCIA": "Experiencia",
+    "PROYECTOS": "Proyectos",
+    "SOBRE_MI": "Sobre Mí",
+    "BLOG": "Blog"
+  },
   "EXPERIENCE_TITLE": "Experiencia",
   "PROJECTS_TITLE": "Proyectos",
-  "ABOUT_ME_TITLE": "Sobre mí",
+  "ABOUT_ME_TITLE": "Sobre Mí",
   "ABOUT_ME": {
     "INTRO": "Me llamo Gabriel Ichiro. Empecé a interesarme por la tecnología a temprana edad intentando hacer videojuegos con C++. Actualmente estoy trabajando como desarrollador full stack con interés en ciberseguridad.",
     "ACHIEVEMENTS": "Algunos de mis éxitos incluyen ganar el 2do lugar en el Hackacom de Comteco y participar y quedar en el top 5 de la competencia de ciberseguridad de la AGETIC a nivel nacional."
@@ -15,14 +21,32 @@
     "CONTACT_ME": "Contáctame",
     "LINKEDIN": "LinkedIn"
   },
-  "NAV_ITEMS": {
-    "EXPERIENCIA": "Experiencia",
-    "PROYECTOS": "Proyectos",
-    "SOBRE_MI": "Sobre mí",
-    "BLOG": "Blog"
-  },
+  "EXPERIENCE": [
+    {
+      "date": "Marzo de 2024 - Presente (4 meses)",
+      "title": "Desarrollador Móvil",
+      "company": "Andean",
+      "description": "Desarrollo de aplicaciones Expo, Configuración de Firebase, Configuración del Programa de Desarrolladores de Apple, Configuración de la Consola de Play Store",
+      "location": "Cochabamba, Bolivia"
+    },
+    {
+      "date": "Noviembre de 2023 - Febrero de 2024 (4 meses)",
+      "title": "Desarrollador Móvil",
+      "company": "Andean",
+      "description": "Desarrollo de aplicaciones Expo, Configuración de Firebase, Desarrollo de landing page con NextJS y TailwindCSS",
+      "location": "Cochabamba, Bolivia"
+    },
+    {
+      "date": "Junio de 2023 - Septiembre de 2023 (4 meses)",
+      "title": "Desarrollador Web",
+      "company": "Andean",
+      "description": "Desarrollo de aplicaciones web con ReactJS, Firebase, Redux",
+      "location": "Cochabamba, Bolivia"
+    }
+  ],
+
   "BLOG_PAGE": {
     "TITLE": "Blog de Gabriel Ichiro",
-    "DESCRIPTION": "Aquí publico actualizaciones o artículos que se me ocurran."
+    "DESCRIPTION": "Aquí publico actualizaciones o artículos que se me ocurren."
   }
 }

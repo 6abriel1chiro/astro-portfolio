@@ -1,6 +1,12 @@
 {
   "SEO_TITLE": "Gabriel Ichiro - Systems Engineer and Web Developer",
   "SEO_DESCRIPTION": "Contact us to create your web and mobile system.",
+  "NAV_ITEMS": {
+    "EXPERIENCE": "Experience",
+    "PROJECTS": "Projects",
+    "ABOUT_ME": "About Me",
+    "BLOG": "Blog"
+  },
   "EXPERIENCE_TITLE": "Experience",
   "PROJECTS_TITLE": "Projects",
   "ABOUT_ME_TITLE": "About Me",
@@ -15,12 +21,30 @@
     "CONTACT_ME": "Contact Me",
     "LINKEDIN": "LinkedIn"
   },
-  "NAV_ITEMS": {
-    "EXPERIENCE": "Experience",
-    "PROJECTS": "Projects",
-    "ABOUT_ME": "About Me",
-    "BLOG": "Blog"
-  },
+  "EXPERIENCE": [
+    {
+      "date": "March 2024 - Present (4 months)",
+      "title": "Mobile Developer",
+      "company": "Andean",
+      "description": "Expo Application Development, Firebase Configuration, Apple Developer Program Configuration, Play Store Console Configuration",
+      "location": "Cochabamba, Bolivia"
+    },
+    {
+      "date": "November 2023 - February 2024 (4 months)",
+      "title": "Mobile Developer",
+      "company": "Andean",
+      "description": "Expo Application Development, Firebase Configuration, NextJS Landing page development, and TailwindCSS",
+      "location": "Cochabamba, Bolivia"
+    },
+    {
+      "date": "June 2023 - September 2023 (4 months)",
+      "title": "Web Developer",
+      "company": "Andean",
+      "description": "Development of web applications with ReactJS, Firebase, Redux",
+      "location": "Cochabamba, Bolivia"
+    }
+  ],
+
   "BLOG_PAGE": {
     "TITLE": "Gabriel Ichiro's Blog",
     "DESCRIPTION": "Here I publish updates or articles that come to mind."
