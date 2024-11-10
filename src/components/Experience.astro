@@ -5,14 +5,12 @@ import { getTranslations, type Translations } from "../i18n";
 const { currentLocale = "es" } = Astro;
 const translations: Translations = getTranslations({ currentLocale });
 
-const EXPERIENCES = Array.isArray(translations["EXPERIENCE"])
-  ? translations["EXPERIENCE"]
-  : [];
+const EXPERIENCES = translations["EXPERIENCE"];
 ---
 
 <ol class="relative mt-16">
   {
-    EXPERIENCES.map((experience: any) => (
+    EXPERIENCES.map((experience) => (
       <li class="">
         <ExperienceItem {...experience} />
       </li>

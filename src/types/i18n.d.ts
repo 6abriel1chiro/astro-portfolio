@@ -7,8 +7,9 @@ export type Translations = {
     date: string;
     title: string;
     company: string;
+    description: string;
     location: string;
-  };
+  }[];
   PROJECTS_TITLE: string;
   ABOUT_ME_TITLE: string;
   ABOUT_ME: {
