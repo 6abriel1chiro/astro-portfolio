@@ -1,8 +1,5 @@
 ---
 const { currentLanguage } = Astro.props;
-import SunIcon from "./icons/Sun.astro";
-import MoonIcon from "./icons/Moon.astro";
-import SystemIcon from "./icons/System.astro";
 
 const LANGUAGES = ["ES", "EN"];
 ---
@@ -15,19 +12,23 @@ const LANGUAGES = ["ES", "EN"];
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  const initializeLanguageSelector = () => {
     const select = document.getElementById("language-select");
     if (select) {
       select.addEventListener("change", (event) => {
         const target = event.target as HTMLSelectElement;
         if (target) {
           const newLanguage = target.value;
+          const currentPath = window.location.pathname;
           const newPath = newLanguage === "es" ? "/" : `/${newLanguage}`;
           window.location.href = newPath;
         }
       });
     }
-  });
+  };
+
+  document.addEventListener("astro:page-load", initializeLanguageSelector);
+  initializeLanguageSelector();
 </script>
 
 <style>
