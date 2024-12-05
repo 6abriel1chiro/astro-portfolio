@@ -16,7 +16,7 @@
   },
   "HERO": {
     "GREETING": "¡Hey! 👋, me llamo Gabriel",
-    "DESCRIPTION": "+5 años de formación en tecnología. <strong>Ingeniero de Software, apasionado por la ciberseguridad e inteligencia artificial</strong> de Cochabamba, Bolivia. Especializado en el desarrollo de aplicaciones web y móviles.",
+    "DESCRIPTION": "+5 años de formación en tecnología. <strong>Ingeniero de Sistemas, apasionado por la ciberseguridad e inteligencia artificial</strong> de Cochabamba, Bolivia. Especializado en el desarrollo de aplicaciones web y móviles.",
     "AVAILABLE": "Disponible para trabajar",
     "CONTACT_ME": "Contáctame",
     "LINKEDIN": "LinkedIn",
@@ -43,6 +43,20 @@
       "company": "Andean",
       "description": "Desarrollo de aplicaciones web con ReactJS, Firebase, Redux",
       "location": "Cochabamba, Bolivia"
+    }
+  ],
+  "PROJECTS": [
+    {
+      "title": "EXTENSIÓN DE VS CODE - Escáner de Vulnerabilidades XSS",
+      "description": "Extensión para Visual Studio Code que escanea vulnerabilidades XSS en el código."
+    },
+    {
+      "title": "Statistix.io - Sitio web de estadísticas",
+      "description": "Aplicación web con herramientas básicas de estadísticas."
+    },
+    {
+      "title": "Sistema de Gestión de Gimnasio",
+      "description": "Sistema de gestión de gimnasio con control de usuarios, pagos y asistencias."
     }
   ],
 

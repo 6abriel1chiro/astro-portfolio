@@ -45,6 +45,20 @@
       "location": "Cochabamba, Bolivia"
     }
   ],
+  "PROJECTS": [
+    {
+      "title": "VS CODE EXTENSION - XSS Vulnerability Scanner",
+      "description": "Extension for Visual Studio Code that scans for XSS vulnerabilities in the code."
+    },
+    {
+      "title": "Statistix.io - Statistics website",
+      "description": "Web application with basic statistics tools."
+    },
+    {
+      "title": "Gym Management System",
+      "description": "Gym management system with user authentication and finance reports."
+    }
+  ],
 
   "BLOG_PAGE": {
     "TITLE": "Gabriel Ichiro's Blog",

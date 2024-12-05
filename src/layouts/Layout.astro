@@ -27,11 +27,11 @@ const lang = currentLocale === "en" ? "en" : "es";
     <ViewTransitions />
   </head>
 
-  <body class="relative text-black dark:text-white">
+  <body class="relative">
     <div
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
-      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
-      dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-[#BBF7D0] dark:bg-[#586f7c]
+      bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(187,247,208,0.5),rgba(187,247,208,0.9))]
+      dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(88,111,124,0.3),rgba(88,111,124,0))]"
     >
     </div>
     <Header />
@@ -53,6 +53,7 @@ const lang = currentLocale === "en" ? "en" : "es";
         flex-direction: column;
         min-height: 100vh;
         overscroll-behavior: none;
+        background-color: #bbf7d0;
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -64,6 +65,7 @@ const lang = currentLocale === "en" ? "en" : "es";
       @media (prefers-color-scheme: dark) {
         body {
           color: rgba(255, 255, 255, 0.9);
+          background-color: #586f7c;
         }
       }
 
