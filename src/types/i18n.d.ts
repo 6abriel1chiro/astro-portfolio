@@ -35,6 +35,7 @@ export type Translations = {
     AVAILABLE: string;
     CONTACT_ME: string;
     LINKEDIN: string;
+    CV: string;
   };
   BLOG_PAGE: {
     TITLE: string;
