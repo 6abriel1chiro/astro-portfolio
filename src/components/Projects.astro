@@ -7,13 +7,14 @@ import LinkButton from "./LinkButton.astro";
 import ReactJS from "./icons/ReactJS.astro";
 import NodeJS from "./icons/NodeJS.astro";
 import TypeScript from "./icons/Typescript.astro";
+import Supabase from "./icons/Supabase.astro";
 
 const { translations } = Astro.props;
 
 const TAGS = {
   NEXT: {
     name: "Next.js",
-    class: "bg-black text-white",
+    class: "bg-white text-black",
     icon: NextJS,
   },
   TAILWIND: {
@@ -36,6 +37,11 @@ const TAGS = {
     class: "bg-[#3178C6] text-white",
     icon: TypeScript,
   },
+  SUPABASE: {
+    name: "Supabase",
+    class: "bg-[#639] text-white",
+    icon: Supabase,
+  },
 };
 
 const PROJECTS = [
@@ -46,7 +52,7 @@ const PROJECTS = [
     github:
       "https://github.com/6abriel1chiro/js-vulnerabilities-analysis-extension",
     image: "/img/vscode.webp",
-    tags: [TAGS.REACT, TAGS.NODEJS],
+    tags: [TAGS.TYPESCRIPT, TAGS.REACT, TAGS.NODEJS],
   },
   {
     title: translations.PROJECTS[1].title,
@@ -54,7 +60,7 @@ const PROJECTS = [
     link: "https://6abriel1chiro.github.io/statistix.io/",
     github: "https://github.com/6abriel1chiro/statistix.io",
     image: "/img/statistix.webp",
-    tags: [TAGS.TYPESCRIPT, TAGS.TAILWIND],
+    tags: [TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.REACT],
   },
   {
     title: translations.PROJECTS[2].title,
@@ -62,7 +68,7 @@ const PROJECTS = [
     link: "https://gym-membership-system.vercel.app/",
     github: "https://github.com/6abriel1chiro/gym-saas",
     image: "/img/gym-management.webp",
-    tags: [TAGS.REACT, TAGS.NODEJS],
+    tags: [TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.NEXT, TAGS.SUPABASE],
   },
 ];
 ---
