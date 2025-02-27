@@ -57,6 +57,10 @@
     {
       "title": "Gym Management System",
       "description": "Gym management system with user authentication and finance reports."
+    },
+    {
+      "title": "App for tracking your daily github contributions",
+      "description": "App for tracking your daily github contributions, add comments about concerns and progress."
     }
   ],
 

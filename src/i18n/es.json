@@ -57,6 +57,10 @@
     {
       "title": "Sistema de Gestión de Gimnasio",
       "description": "Sistema de gestión de gimnasio con control de usuarios, pagos y asistencias."
+    },
+    {
+      "title": "Aplicacion de journal de progreso en github",
+      "description": "Aplicación web que muestra los commits e ingresar comentarios para mantener registro de lo aprendido/avanzado."
     }
   ],
 

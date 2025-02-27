@@ -8,7 +8,8 @@ import ReactJS from "./icons/ReactJS.astro";
 import NodeJS from "./icons/NodeJS.astro";
 import TypeScript from "./icons/Typescript.astro";
 import Supabase from "./icons/Supabase.astro";
-
+import Django from "./icons/Django.astro";
+import Python from "./icons/Python.astro";
 const { translations } = Astro.props;
 
 const TAGS = {
@@ -42,6 +43,16 @@ const TAGS = {
     class: "bg-[#639] text-white",
     icon: Supabase,
   },
+  DJANGO: {
+    name: "Django",
+    class: "bg-[#092E20] text-white",
+    icon: Django,
+  },
+  PYTHON: {
+    name: "Python",
+    class: "bg-[#FF3E00] text-white",
+    icon: Python,
+  },
 };
 
 const PROJECTS = [
@@ -69,6 +80,14 @@ const PROJECTS = [
     github: "https://github.com/6abriel1chiro/gym-saas",
     image: "/img/gym-management.webp",
     tags: [TAGS.TYPESCRIPT, TAGS.TAILWIND, TAGS.NEXT, TAGS.SUPABASE],
+  },
+  {
+    title: translations.PROJECTS[3].title,
+    description: translations.PROJECTS[3].description,
+    link: "",
+    github: "https://github.com/6abriel1chiro/gh-progress-track-app",
+    image: "/img/gh-progress-tracker.jpeg",
+    tags: [TAGS.DJANGO, TAGS.PYTHON],
   },
 ];
 ---
